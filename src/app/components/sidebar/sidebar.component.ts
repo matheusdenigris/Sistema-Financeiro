@@ -1,4 +1,4 @@
-import { MenuService } from './../../services/menu.services';
+import { MenuService } from './../../services/menu.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 

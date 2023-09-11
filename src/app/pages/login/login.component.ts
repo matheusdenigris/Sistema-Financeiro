@@ -1,4 +1,4 @@
-import { LoginService } from './../../services/login.services';
+import { LoginService } from './../../services/login.service';
 import { Component } from '@angular/core';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -37,7 +37,6 @@ export class LoginComponent {
   loginUser() {
     this.loginService.login(this.dadosForm["email"].value, this.dadosForm["senha"].value).subscribe(
       token => {
-        alert(token);
         this.router.navigate(['/dashboard']);
       },
       err => {
